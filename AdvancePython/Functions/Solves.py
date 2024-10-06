@@ -149,14 +149,14 @@
 #     # then the sum of them will be calculated
 
 # Problem: Create a recursive function to calculate the factorial of a number.
-
-def fact(num):
-    if num == 1:
-        return num
-    return fact(num - 1) * num
-
-if __name__ == '__main__':
-    print(fact(5))
+#
+# def fact(num):
+#     if num == 1:
+#         return num
+#     return fact(num - 1) * num
+#
+# if __name__ == '__main__':
+#     print(fact(5))
 
 
 
