@@ -32,7 +32,7 @@
 # # EV1 = ElectricCar("Tesla", "Mark10", "85 KwH")
 # # EV1.details()
 #
-# # Problem4: Modify the Animal class to encapsulate the brand attribute, making it private, and provide a getter method
+# # Problem4: Modify the Animal class to encapsulate the Name attribute, making it private, and provide a getter method
 # # for it.
 #
 # class Animal:
@@ -197,18 +197,18 @@
 
 # 10. Multiple InheritanceProblem: Create two classes Battery and Engine,
 # and let the ElectricCar class inherit from both, demonstrating multiple inheritance.
-class Father:
-    def Father_info(self):
-        print("Father - Russo")
-
-class Mother:
-    def Mother_info(self):
-        print("Mother - Zoe")
-
-class Boy_Child(Father, Mother):
-    pass
-
-b1 = Boy_Child()
-
-b1.Father_info()
-b1.Mother_info()
+# class Father:
+#     def Father_info(self):
+#         print("Father - Russo")
+#
+# class Mother:
+#     def Mother_info(self):
+#         print("Mother - Zoe")
+#
+# class Boy_Child(Father, Mother):
+#     pass
+#
+# b1 = Boy_Child()
+#
+# b1.Father_info()
+# b1.Mother_info()
