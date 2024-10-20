@@ -137,17 +137,78 @@
 # 7. Static Method
 # Problem: Add a static method to the Car class that returns a general description of a car.
 
-class Bike:
+# class Bike:
+#
+#     def __init__(self, Brand, Name):
+#         self.Brand = Brand
+#         self.Name = Name
+#
+#     @staticmethod
+#     def general_description():
+#         return "Bike is Two Wheeler"
+#
+#
+# b1 = Bike("Pulser", "Bajaj")
+# print(Bike.general_description())
 
-    def __init__(self, Brand, Name):
-        self.Brand = Brand
-        self.Name = Name
 
-    @staticmethod
-    def general_description():
-        return "Bike is Two Wheeler"
+# 8. Property Decorators
+# Problem: Use a property decorator in the Car class to make the model attribute read-only.
+
+# class Car:
+#     def __init__(self, Model, Brand):
+#         self.__Model = Model
+#         self.Brand = Brand
+#
+#     def full_name(self):
+#         print(f"Car Model = {self.__Model} , Brand = {self.Brand}")
+#
+#     @property
+#     def Model(self):
+#         return self.__Model
+#
+#
+# c1 = Car("Axela", "Mazda")
+# print(c1.Model)
+
+# 9. Class Inheritance and isinstance() Function
+# Problem: Demonstrate the use of isinstance() to check if my_tesla is an instance of Car and ElectricCar.
+# class Car:
+#
+#     # have to pass [self] keyword every time you create a function inside a class
+#     def __init__(self, brand, model):  # constructor
+#         self.brand = brand
+#         self.model = model
+#
+#     def details(self):
+#         print(f"Brand Name = {self.brand} , Car Model - {self.model}")
+#
+#
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, batterySize):
+#         super().__init__(brand, model)
+#         self.batterySize = batterySize
+#
+#
+# my_tesla = ElectricCar("Tesla", "Mark10", "85 KwH")
+# print(isinstance(my_tesla,Car))
+# print(isinstance(my_tesla,ElectricCar))
 
 
-b1 = Bike("Pulser", "Bajaj")
-print(b1.general_description())
-print(Bike.general_description())
+# 10. Multiple InheritanceProblem: Create two classes Battery and Engine,
+# and let the ElectricCar class inherit from both, demonstrating multiple inheritance.
+class Father:
+    def Father_info(self):
+        print("Father - Russo")
+
+class Mother:
+    def Mother_info(self):
+        print("Mother - Zoe")
+
+class Boy_Child(Father, Mother):
+    pass
+
+b1 = Boy_Child()
+
+b1.Father_info()
+b1.Mother_info()
