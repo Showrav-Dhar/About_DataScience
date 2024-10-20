@@ -36,18 +36,19 @@
 # if __name__ == '__main__':
 #     greet()
 
-def my_decorator(func):
-    def wrapper(*args, **kwargs):
-        # If we don't return func(*args, **kwargs):
-        return func(*args, **kwargs)
+# def my_decorator(func):
+#     def wrapper(*args, **kwargs):
+#         # If we don't return func(*args, **kwargs):
+#         return func(*args, **kwargs)
+#
+#     return wrapper
+#
+#
+# @my_decorator
+# def add(a, b):
+#     return a + b
+#
+#
+# result = add(2, 3)
+# print(result)
 
-    return wrapper
-
-
-@my_decorator
-def add(a, b):
-    return a + b
-
-
-result = add(2, 3)
-print(result)

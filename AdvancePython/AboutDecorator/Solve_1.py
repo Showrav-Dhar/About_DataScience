@@ -15,7 +15,7 @@ def time_calculator(func):  # taking function as a parameter of another function
     return wrapper  # returning the definition of wrapper
 
 
-@time_calculator
+@time_calculator    # line [18 to 22] is same as, example_function = time_calculator(example_function)
 def example_function(n):
     # after writing @time_calculator, example_function will always go through time_calculator while executing
     # with its parameter

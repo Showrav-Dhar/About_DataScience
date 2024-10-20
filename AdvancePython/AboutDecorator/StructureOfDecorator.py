@@ -1,5 +1,5 @@
 # def outer(func):
-#     def wrapper():
+#     def wrapper(*args, **kwargs):
 #         #statement1
 #         #statement2
 #         return func(*args, **kwargs) # always return the original function with its arguments
@@ -18,7 +18,7 @@
 # Key Points to Remember for why the wrapper() returns the original function :
 #
 # Decorators wrap the original function
-# The wrapper function acts as a proxy
+# The wrapper function acts as a proxy of the original function
 # Any return value from the original function must be passed through the wrapper
 # Missing returns in decorators breaks the function's behavior
 # Each decorator in a chain must preserve the return value
