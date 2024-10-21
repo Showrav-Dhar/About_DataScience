@@ -21,7 +21,7 @@ def custom_cache(func):
 
 @custom_cache
 def long_running_function(a, b):
-    time.sleep(4)
+    time.sleep(4)  # to show that the function is taking time to process the summation
     return a + b
 
 
